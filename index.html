@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSA Call Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RSA Marketing Call Assistant</h1>
+
+    <!-- Step Indicator -->
+    <div id="step-indicator">Step: Opener</div>
+
+    <!-- Script Panel -->
+    <div class="panel" id="script-panel">
+      <h2>Script to Say</h2>
+      <p id="script-line"></p>
+    </div>
+
+    <!-- Business Reply Panel -->
+    <div class="panel" id="reply-panel">
+      <h2>Business Reply</h2>
+      <input type="text" id="business-reply" placeholder="Type their reply here">
+      <div id="preset-replies">
+        <button class="reply-btn">Busy</button>
+        <button class="reply-btn">Send me info</button>
+        <button class="reply-btn">No budget</button>
+        <button class="reply-btn">Already have agency</button>
+        <button class="reply-btn">Need to think</button>
+        <button class="reply-btn">Not interested</button>
+      </div>
+      <button id="submit-reply">Submit Reply</button>
+    </div>
+
+    <!-- Suggested Response Panel -->
+    <div class="panel" id="response-panel">
+      <h2>Suggested Next Line</h2>
+      <p id="suggested-line"></p>
+    </div>
+
+    <!-- Observation Panel -->
+    <div class="panel" id="observation-panel">
+      <h2>Observation / Issue</h2>
+      <input type="text" id="observation-input" placeholder="Type or paste website URL">
+      <button id="suggest-issue">Suggest Issue</button>
+      <p id="issue-suggestion"></p>
+    </div>
+
+    <!-- Navigation -->
+    <div id="navigation">
+      <button id="prev-step">Previous Step</button>
+      <button id="next-step">Next Step</button>
+      <button id="reset-call">Reset Call</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
